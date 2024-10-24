@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="quiz-container">
+    <div class="header">
+        <h1>Club Finder quiz</h1>
+    </div>
+    <div class="quiz-status">
+        <span id="question-counter">Question 1 out of 10</span>
+        <span id="timer">10:00</span>
+    </div>
+    <div class="question-navigation" id="question-navigation">
+        <button onclick="navigateToQuestion(1)" id="nav-btn-1">1</button>
+        <button onclick="navigateToQuestion(2)" id="nav-btn-2">2</button>
+        <button onclick="navigateToQuestion(3)" id="nav-btn-3">3</button>
+        <button onclick="navigateToQuestion(4)" id="nav-btn-4">4</button>
+        <button onclick="navigateToQuestion(5)" id="nav-btn-5">5</button>
+        <button onclick="navigateToQuestion(6)" id="nav-btn-6">6</button>
+        <button onclick="navigateToQuestion(7)" id="nav-btn-7">7</button>
+        <button onclick="navigateToQuestion(8)" id="nav-btn-8">8</button>
+        <button onclick="navigateToQuestion(9)" id="nav-btn-9">9</button>
+        <button onclick="navigateToQuestion(10)" id="nav-btn-10">10</button>
+    </div>
+    <div class="question" id="question">
+        <p>This is the first question</p>
+    </div>
+    <div class="options" id="options">
+        <button onclick="selectOption(1)">Option 1</button>
+        <button onclick="selectOption(2)">Option 2</button>
+        <button onclick="selectOption(3)">Option 3</button>
+        <button onclick="selectOption(4)">Option 4</button>
+    </div>
+    <div class="next-button">
+        <button onclick="nextQuestion()">Next</button>
+    </div>
+    <div class="footer">
+        <p>Question 1 out of 10</p>
+    </div>
+</div>
+
+<div class="container" id="result-container" style="display: none;">
+    <div class="header">
+        <h1>Quiz Results</h1>
+    </div>
+    <div id="results"></div>
+    <div class="retake-button">
+        <button onclick="retakeQuiz()">Retake Quiz</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

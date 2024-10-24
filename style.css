@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(Background.PNG);
+    background-size: cover;
+    background-repeat: repeat;
+}
+.container {
+    width: 60%;
+    margin-top: 20px;
+    border: 1px solid #ded1d1;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(253, 249, 5, 0.1);
+    background-color:rgba(255, 255, 255, 0.5);
+}
+.header {
+    text-align: center;
+    color: #e6db04;
+}
+.quiz-status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #e6db04;
+}
+.question-navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #e6db04;
+}
+.question-navigation button {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border: none;
+    background-color: #faf1f1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.question-navigation button.active {
+    background-color: #eeff06;
+    color: rgb(226, 226, 226);
+}
+.question-navigation button.answered {
+    background-color: #ab0808;
+    color: white;
+    cursor: not-allowed;
+}
+.question-navigation button:hover:not(.answered) {
+    background-color: #ddd;
+}
+.question {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #9c0606;
+}
+.options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: #e6db04;
+}
+.options button {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.options button.selected {
+    background-color: #9c0606;
+    color: white;
+}
+.options button:hover {
+    background-color: #f0f0f0;
+}
+.next-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.next-button button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e6db04;
+    color: #fff;
+    cursor: pointer;
+}
+.next-button button:hover {
+    background-color: #d4db09;
+}
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+.retake-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.retake-button button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.retake-button button:hover {
+    background-color: #0056b3;
+}
